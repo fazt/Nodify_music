@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Node Stream Player</title>
+  </head>
+  <body>
+    <div class="app">
+      <!-- sidebars -->
+      <div class="songs-list-container"></div>
+
+      <!-- player -->
+      <div class="player-container">
+        <audio id="player" class="player" controls></audio>
+      </div>
+
+
+      <!-- UPLOAD SONG -->
+      <form action="/songs" method="post" enctype="multipart/form-data">
+        <input type="file" name="song">
+        <input type="submit" value="Upload">
+      </form>
+
+      <!-- scripts -->
+      <script src="/libs/jquery.min.js" charset="utf-8"></script>
+      <script src="/js/app.bundle.js" charset="utf-8"></script>
+    </div>
+  </body>
+</html>
